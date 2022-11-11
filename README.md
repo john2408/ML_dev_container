@@ -1,11 +1,9 @@
 # ML Developement Docker Container using Devcontainer - Jupyter Notebooks
 
-[![docker pulls](https://img.shields.io/docker/pulls/jupyter/pyspark-notebook.svg)](https://hub.docker.com/r/jupyter/pyspark-notebook/)
-[![docker stars](https://img.shields.io/docker/stars/jupyter/pyspark-notebook.svg)](https://hub.docker.com/r/jupyter/pyspark-notebook/)
-[![image size](https://img.shields.io/docker/image-size/jupyter/pyspark-notebook/latest)](https://hub.docker.com/r/jupyter/pyspark-notebook/ "jupyter/pyspark-notebook image size")
+[![image size](https://img.shields.io/docker/image-size/johntorrestensor/ml_dev/latest)](https://hub.docker.com/repository/docker/johntorrestensor/ml_dev "johntorrestensor/ml_dev image size")
 
 
-This ML Development environment allows to work interactively with Jupyter Notebooks on ML Projects using VsCode and Devcontainers. 
+This ML Development environment allows to work interactively with **Jupyter Notebooks** on ML Projects using **VsCode** and **devcontainers**. 
 Working with ETL pipelines is also possible since pyspark is also available. 
 
 Main Packages are:
@@ -23,7 +21,7 @@ Main Packages are:
 - PyWavelets 
 - keras-tcn
 
-Prerequisites: 
+**Prerequisites:** 
 
 You must have the following software installed in your pc: 
 
