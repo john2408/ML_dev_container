@@ -1,5 +1,4 @@
 #ref: https://docs.aws.amazon.com/sagemaker/latest/dg/adapt-training-container.html
-
 FROM python:3.10.6-bullseye
 
 ARG spark_version="3.3.0"
@@ -45,7 +44,7 @@ RUN if [ -z "${scala_version}" ]; then \
 
 WORKDIR /
 
-# Installing numpy, pandas, scikit-learn, scipy
+# Installing ML basic packages
 RUN pip install --no-cache --upgrade \
             numpy \
             pandas \
@@ -63,5 +62,8 @@ RUN pip install --no-cache --upgrade \
 RUN pip install --upgrade pip
 
 WORKDIR /
+
+# Start docker interactive sessino at bash
+CMD ["/bin/bash"]
 
 
