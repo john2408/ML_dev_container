@@ -70,7 +70,7 @@ Run interactive docker session, where "PWD" is your current working directory in
 
 
 ```bat
-sudo docker run -it --rm -p 8888:8888 -v "${PWD}":/home/ ml_dev:latest
+sudo docker run -it --rm -p 8888:8888 --name <container_name> -v "${PWD}":/home/ ml_dev:latest
 ```
 
 In Linux go to your vscode and open your working directoy, and press Crtl + Shift + p and select:
