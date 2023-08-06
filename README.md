@@ -70,7 +70,12 @@ Run interactive docker session, where "PWD" is your current working directory in
 
 
 ```bat
-sudo docker run -it --rm -p 8888:8888 --name <container_name> -v "${PWD}":/home/ ml_dev:latest
+sudo docker run -it -p 8888:8888 --name <container_name> -v "${PWD}":/home/ ml_dev:latest
+```
+Then the container can be reused by: 
+
+```bat
+sudo docker start -i <container_name>
 ```
 
 In Linux go to your vscode and open your working directoy, and press Crtl + Shift + p and select:
@@ -88,3 +93,4 @@ Attach to runnig container...
 A new VsCode window will open up, now you can start working with jupyter files, python files, debuggers, etc. 
 
 For jupyter notebooks install the "Jupyter" extension on the the VsCode window. 
+
